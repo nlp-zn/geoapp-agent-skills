@@ -1,8 +1,6 @@
 {
   "syncVersion": 1,
-  "source": {
-    "repository": "https://github.com/nlp-zn/geo-app",
-    "ref": "47ea2b310c4c6dac878d34540be3fb1f83c38393",
+  "package": {
     "cliVersion": "0.1.0",
     "skillsVersion": "0.1.0"
   },
@@ -19,109 +17,104 @@
   ],
   "files": [
     {
-      "source": "docs/agent-skills/cursor-template.md",
       "target": "docs/agent-skills/cursor-template.md",
-      "bytes": 1216
+      "bytes": 1216,
+      "sha256": "1bbd046d1dbef1c245de51ce4e5e9f53632251cc35568e673f1d3c358d25226d"
     },
     {
-      "source": "docs/agent-skills/install-claude.md",
       "target": "docs/agent-skills/install-claude.md",
-      "bytes": 594
+      "bytes": 594,
+      "sha256": "8a29cab9eff4780c8770a6e1877ecc17e4f3d522b0aa06b3902da1df694de0d7"
     },
     {
-      "source": "docs/agent-skills/install-codex.md",
       "target": "docs/agent-skills/install-codex.md",
-      "bytes": 673
+      "bytes": 673,
+      "sha256": "4358b85b6dd43273e46e5e5e13b7c33b706d9d2c317c9b14b2804cc7f0f18698"
     },
     {
-      "source": "docs/agent-skills/playbooks/batch-run-analysis.md",
       "target": "docs/agent-skills/playbooks/batch-run-analysis.md",
-      "bytes": 346
+      "bytes": 346,
+      "sha256": "2c3bbf5241d84ad4aca7f0f3d292285a36498bbb67df87283673a0c50d5cad9b"
     },
     {
-      "source": "docs/agent-skills/playbooks/competitor-citation-analysis.md",
       "target": "docs/agent-skills/playbooks/competitor-citation-analysis.md",
-      "bytes": 496
+      "bytes": 496,
+      "sha256": "3a949f6abba0eafa0f3e0a5569299131808d76341ea9dfd09979213b2ad20391"
     },
     {
-      "source": "docs/agent-skills/playbooks/prompt-generation.md",
       "target": "docs/agent-skills/playbooks/prompt-generation.md",
-      "bytes": 495
+      "bytes": 495,
+      "sha256": "5c8c6fe1ef3048be3461d10e14ec42fada6d5a8b6b305f8da70a707ddc3246b6"
     },
     {
-      "source": "docs/agent-skills/playbooks/run-export-report.md",
       "target": "docs/agent-skills/playbooks/run-export-report.md",
-      "bytes": 346
+      "bytes": 346,
+      "sha256": "a9165185ffcd0bceb57037e9523bafb852a0ebb08b843dd1dde6c8a04a3ac719"
     },
     {
-      "source": "docs/agent-skills/public-sync.md",
-      "target": "docs/agent-skills/public-sync.md",
-      "bytes": 3295
-    },
-    {
-      "source": "docs/cli/auth.md",
       "target": "docs/cli/auth.md",
-      "bytes": 1473
+      "bytes": 1473,
+      "sha256": "fcb97a9ff5e98aa4fa182816f3bc962b2ed743b7b212d9cbaca8839baa021d31"
     },
     {
-      "source": "docs/cli/command-reference.md",
       "target": "docs/cli/command-reference.md",
-      "bytes": 1619
+      "bytes": 1619,
+      "sha256": "b93b89679debb9a397b680d91904aef93f7b2a82aadb77371f600f9de264cbea"
     },
     {
-      "source": "docs/cli/errors.md",
       "target": "docs/cli/errors.md",
-      "bytes": 1044
+      "bytes": 1044,
+      "sha256": "899b5f3bb3b55a015a187dcfb875c1e6e69589b6d63b6d660020508e47f791ff"
     },
     {
-      "source": "docs/cli/raw-api.md",
       "target": "docs/cli/raw-api.md",
-      "bytes": 730
+      "bytes": 730,
+      "sha256": "195bd210807210d18fb5276544c15aa69d1ac445231e8cf1b6e14991c16238ae"
     },
     {
-      "source": "docs/cli/schema-and-manifest.md",
       "target": "docs/cli/schema-and-manifest.md",
-      "bytes": 558
+      "bytes": 558,
+      "sha256": "2c6d7f4f0b91f1d66dab3c05300f501061e2c503cb3a85c196036fb2c6057009"
     },
     {
-      "source": "docs/cli/security-and-audit.md",
       "target": "docs/cli/security-and-audit.md",
-      "bytes": 917
+      "bytes": 917,
+      "sha256": "fe8b329072dba4b6d2cbbbd893a367774b74e04fc6922792a6b68548d2a7903e"
     },
     {
-      "source": "packages/agent-skills/README.md",
       "target": "README.md",
-      "bytes": 494
+      "bytes": 494,
+      "sha256": "31d6e1cdcf0a58b2c0666c6d5d3dcf90652693fb8dda8bf86584d0a1cefbd1e1"
     },
     {
-      "source": "packages/agent-skills/skills/geo-competitor-citation-analysis/SKILL.md",
       "target": "skills/geo-competitor-citation-analysis/SKILL.md",
-      "bytes": 2433
+      "bytes": 2433,
+      "sha256": "2b29e1d4ca598170fa63752944d1a9fc78606cc2e62d4da751d6d954b5e077a9"
     },
     {
-      "source": "packages/agent-skills/skills/geo-prompt-ops/SKILL.md",
       "target": "skills/geo-prompt-ops/SKILL.md",
-      "bytes": 2160
+      "bytes": 2160,
+      "sha256": "05ad1598d91c712731d89500b03e65fe887efb2d84382b272e7bee97bbf9da5c"
     },
     {
-      "source": "packages/agent-skills/skills/geo-reporting/SKILL.md",
       "target": "skills/geo-reporting/SKILL.md",
-      "bytes": 1555
+      "bytes": 1555,
+      "sha256": "a83f680ab23ddae45f19e07d70487da5f810e58fed400ab52c380ac3b3fe2c36"
     },
     {
-      "source": "packages/agent-skills/skills/geo-run-analysis/SKILL.md",
       "target": "skills/geo-run-analysis/SKILL.md",
-      "bytes": 1879
+      "bytes": 1879,
+      "sha256": "28d0a6e63e9ff2092e9b8f45c97c9596db4508bf2dda9cdef56b7456e2db0e0a"
     },
     {
-      "source": "packages/agent-skills/skills/geo-shared/SKILL.md",
       "target": "skills/geo-shared/SKILL.md",
-      "bytes": 2298
+      "bytes": 2298,
+      "sha256": "ca615f6c8250217dd1b7b260896671321efaf401cccffa377f3185f1f0d683b8"
     },
     {
-      "source": "packages/agent-skills/skills/geo-skill-execution/SKILL.md",
       "target": "skills/geo-skill-execution/SKILL.md",
-      "bytes": 1539
+      "bytes": 1539,
+      "sha256": "1cdb9a9e7e5654a5653bcf2aa8c9299a7987769f4f2b0af9f13e8569f00e9cfa"
     }
   ]
 }
