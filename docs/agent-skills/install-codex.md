@@ -1,6 +1,32 @@
 # Install Geo Agent Skills For Codex
 
-Install the Geo App agent skills into Codex:
+Geo agent skills teach Codex how to operate Geo App through the `geo` CLI.
+Install them when you want Codex to generate prompts, run prompt batches,
+analyze run exports, create reports, inspect competitors/citations, or execute
+server-side Geo skills.
+
+## Prerequisites
+
+```bash
+geo doctor
+geo auth status
+geo brand current
+```
+
+If auth is missing, run:
+
+```bash
+geo auth login
+```
+
+If brand context is missing:
+
+```bash
+geo brand list
+geo brand use <brand_id>
+```
+
+## Install
 
 ```bash
 geo agent-skills install --agent codex
@@ -13,13 +39,20 @@ Default install path:
 ~/.codex/skills
 ```
 
-For tests or custom setups, override the path:
+For tests or custom setups:
 
 ```bash
 GEO_AGENT_SKILLS_CODEX_DIR=/path/to/skills geo agent-skills install --agent codex
 ```
 
-After installation, ask Codex to use one of:
+## Verify
+
+```bash
+geo agent-skills list
+geo agent-skills doctor --agent codex
+```
+
+Then ask Codex to use one of:
 
 - `$geo-shared`
 - `$geo-prompt-ops`
@@ -28,5 +61,20 @@ After installation, ask Codex to use one of:
 - `$geo-skill-execution`
 - `$geo-competitor-citation-analysis`
 
-Run `geo doctor` before real work so the agent can recover from auth, brand,
-scope, and server compatibility issues.
+## First Useful Prompt
+
+```text
+Use the Geo skills. Check geo doctor/auth/brand, export the last 7 days of
+prompt runs with responses, citations, mentions, metrics, and errors, then
+summarize the top findings and save a report in Geo App.
+```
+
+## Recovery
+
+| Symptom | Fix |
+| --- | --- |
+| Codex does not see the skills | Re-run `geo agent-skills doctor --agent codex` and restart Codex. |
+| `geo` is not found | Install or expose the published Geo CLI on `PATH`. |
+| Auth required | Run `geo auth login` or set a scoped PAT with `geo auth token set`. |
+| Missing brand | Run `geo brand list`, then `geo brand use <brand_id>`. |
+| Permission denied | Check PAT scopes and brand allowlist. |

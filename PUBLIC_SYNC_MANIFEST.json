@@ -12,44 +12,42 @@
     "examples",
     "PUBLIC_SYNC_MANIFEST.json"
   ],
-  "skippedOptionalSources": [
-    "examples/agent-skills"
-  ],
+  "skippedOptionalSources": [],
   "files": [
     {
       "target": "docs/agent-skills/cursor-template.md",
-      "bytes": 1216,
-      "sha256": "1bbd046d1dbef1c245de51ce4e5e9f53632251cc35568e673f1d3c358d25226d"
+      "bytes": 1780,
+      "sha256": "6e7d1f9f19d3be6475ce990efe37cf005390f9b271d81b06a72cd893860695e2"
     },
     {
       "target": "docs/agent-skills/install-claude.md",
-      "bytes": 594,
-      "sha256": "8a29cab9eff4780c8770a6e1877ecc17e4f3d522b0aa06b3902da1df694de0d7"
+      "bytes": 1599,
+      "sha256": "eaf72c814ad4f6ef5452c98b1568422ec8d8c732ee79429f6d8786965e1d201e"
     },
     {
       "target": "docs/agent-skills/install-codex.md",
-      "bytes": 673,
-      "sha256": "4358b85b6dd43273e46e5e5e13b7c33b706d9d2c317c9b14b2804cc7f0f18698"
+      "bytes": 1730,
+      "sha256": "a70fd8fda3635ecd4602975567e0991e21be174f7a3236c563f00bbac7c1fa22"
     },
     {
       "target": "docs/agent-skills/playbooks/batch-run-analysis.md",
-      "bytes": 346,
-      "sha256": "2c3bbf5241d84ad4aca7f0f3d292285a36498bbb67df87283673a0c50d5cad9b"
+      "bytes": 1320,
+      "sha256": "49e53afcf5fa7ed4df9dbb9157940108ce592fa48d2368aed21502c8252b5824"
     },
     {
       "target": "docs/agent-skills/playbooks/competitor-citation-analysis.md",
-      "bytes": 496,
-      "sha256": "3a949f6abba0eafa0f3e0a5569299131808d76341ea9dfd09979213b2ad20391"
+      "bytes": 1530,
+      "sha256": "36de19571149fcd17d4b0cae6708ae277504ec776bd95bca02cfe5c8a0f551b6"
     },
     {
       "target": "docs/agent-skills/playbooks/prompt-generation.md",
-      "bytes": 495,
-      "sha256": "5c8c6fe1ef3048be3461d10e14ec42fada6d5a8b6b305f8da70a707ddc3246b6"
+      "bytes": 1267,
+      "sha256": "7cf52ceb4bace082674fa6e5853a2564d54691d57671667e6482a6fc0fc16f8f"
     },
     {
       "target": "docs/agent-skills/playbooks/run-export-report.md",
-      "bytes": 346,
-      "sha256": "a9165185ffcd0bceb57037e9523bafb852a0ebb08b843dd1dde6c8a04a3ac719"
+      "bytes": 940,
+      "sha256": "4b2776327b7c4aef6e335b070712629df59f2b42460f4a64485272779d2cad4b"
     },
     {
       "target": "docs/cli/auth.md",
@@ -82,39 +80,94 @@
       "sha256": "fe8b329072dba4b6d2cbbbd893a367774b74e04fc6922792a6b68548d2a7903e"
     },
     {
+      "target": "examples/competitor-citation-gap.md",
+      "bytes": 1462,
+      "sha256": "984182af32a48fb446c78ca073047281f66acd576be9eca1bb50b17c75aab598"
+    },
+    {
+      "target": "examples/prompt-batch-run-report.md",
+      "bytes": 1476,
+      "sha256": "94563f9f1c256def8600c8eb802886f5511ac23d97be341fb6e9a69f6c069d8f"
+    },
+    {
+      "target": "examples/README.md",
+      "bytes": 827,
+      "sha256": "bcca53a32ed92fa6ad6cef63de37a6c1a9686db1007c80faacd87f163ea78155"
+    },
+    {
+      "target": "examples/run-failure-triage.md",
+      "bytes": 1024,
+      "sha256": "547c8c2bfe2cc17714b6044b335a725b9855ed414a07861c6cbae3ff794eed91"
+    },
+    {
+      "target": "examples/server-skill-execution.md",
+      "bytes": 1059,
+      "sha256": "d40a95806b477be42a9be6c6bf48225c7f130464b0b2b6af5ebc2d05169898af"
+    },
+    {
       "target": "README.md",
-      "bytes": 494,
-      "sha256": "31d6e1cdcf0a58b2c0666c6d5d3dcf90652693fb8dda8bf86584d0a1cefbd1e1"
+      "bytes": 6615,
+      "sha256": "bcb4d7c48c892b73441820c99ea5cb26acdc6670286f9c758fed6a67b4c77447"
+    },
+    {
+      "target": "skills/geo-competitor-citation-analysis/references/decision-sop.md",
+      "bytes": 2495,
+      "sha256": "bd52c833302526deb8e5f2e90542837c982e799b50cb57195d34a95285d19754"
     },
     {
       "target": "skills/geo-competitor-citation-analysis/SKILL.md",
-      "bytes": 2433,
-      "sha256": "2b29e1d4ca598170fa63752944d1a9fc78606cc2e62d4da751d6d954b5e077a9"
+      "bytes": 4617,
+      "sha256": "77763438f4a9dd6345541bba9a72e76bbf696709e29226a568fa6d36a3c5cfa3"
+    },
+    {
+      "target": "skills/geo-prompt-ops/references/prompt-inputs.md",
+      "bytes": 2631,
+      "sha256": "5d7125e94935a11846266740ddd045f89cc5e6fe558adb41fb5e5e357f529818"
     },
     {
       "target": "skills/geo-prompt-ops/SKILL.md",
-      "bytes": 2160,
-      "sha256": "05ad1598d91c712731d89500b03e65fe887efb2d84382b272e7bee97bbf9da5c"
+      "bytes": 5182,
+      "sha256": "ad381b793e4fb1a58a755e093b8d492c1b3c093237024f45ab475936520f6b8b"
+    },
+    {
+      "target": "skills/geo-reporting/references/report-contract.md",
+      "bytes": 1793,
+      "sha256": "f86af98aa213d84a095a2415c57a63efe97b42f38dda06a23cce7908a19b7e0f"
     },
     {
       "target": "skills/geo-reporting/SKILL.md",
-      "bytes": 1555,
-      "sha256": "a83f680ab23ddae45f19e07d70487da5f810e58fed400ab52c380ac3b3fe2c36"
+      "bytes": 3766,
+      "sha256": "0263936b05fe157e01a7e08d725ac75bc32582d8f412f104033de064ed3ebdac"
+    },
+    {
+      "target": "skills/geo-run-analysis/references/run-analysis-sop.md",
+      "bytes": 2180,
+      "sha256": "4e4e6fef20104a9094545bcb1c131e5e9e81991709d80f9e4006c29f4a9c837e"
     },
     {
       "target": "skills/geo-run-analysis/SKILL.md",
-      "bytes": 1879,
-      "sha256": "28d0a6e63e9ff2092e9b8f45c97c9596db4508bf2dda9cdef56b7456e2db0e0a"
+      "bytes": 4304,
+      "sha256": "8f5e9ea0c138a417dc0a4fb14682af85718ff5102386f17150169983657b8722"
+    },
+    {
+      "target": "skills/geo-shared/references/auth-brand-recovery.md",
+      "bytes": 2634,
+      "sha256": "0537880b639e09a0c8c7ef27c08053fc7fa93e4d7d20c6911942eee291af0f59"
     },
     {
       "target": "skills/geo-shared/SKILL.md",
-      "bytes": 2298,
-      "sha256": "ca615f6c8250217dd1b7b260896671321efaf401cccffa377f3185f1f0d683b8"
+      "bytes": 5482,
+      "sha256": "5171661b84be2444b78be4695e9208896ef7e93e6b58a88f6d341aee51053fd0"
+    },
+    {
+      "target": "skills/geo-skill-execution/references/server-skill-inputs.md",
+      "bytes": 1425,
+      "sha256": "20be25ef8cb850cb4491f359b9ff1b6663f6e5f35819f8f681427faef9b06168"
     },
     {
       "target": "skills/geo-skill-execution/SKILL.md",
-      "bytes": 1539,
-      "sha256": "1cdb9a9e7e5654a5653bcf2aa8c9299a7987769f4f2b0af9f13e8569f00e9cfa"
+      "bytes": 3669,
+      "sha256": "4e03df4a76445513642889646bd86b9fb0650f3ef6f2b7ce2d411c1a539d571c"
     }
   ]
 }

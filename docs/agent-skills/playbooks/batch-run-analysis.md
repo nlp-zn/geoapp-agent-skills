@@ -1,13 +1,61 @@
 # Batch Run Analysis Playbook
 
-Use `geo-run-analysis`.
+Use this playbook when an agent needs to interpret prompt-run output and make a
+decision from actual responses, mentions, citations, metrics, and errors.
 
-Export analysis data:
+## Skills
+
+- `geo-shared`
+- `geo-run-analysis`
+- `geo-reporting` when saving the result
+
+## Setup
 
 ```bash
-geo runs export --since 7d --include response,citations,mentions,metrics,errors
+geo doctor
+geo auth status
+geo brand current
+geo schema runs export
 ```
 
-Analyze prompt performance, provider errors, brand mentions, competitor
-mentions, citation authority, and repeated failure modes. Save a durable report
-with `geo-reporting`.
+## Export
+
+Use a clear boundary:
+
+```bash
+geo runs export --since 7d --include response,citations,mentions,metrics,errors --format jsonl > runs.jsonl
+```
+
+For one run:
+
+```bash
+geo runs export --run-id <run_id> --include response,citations,mentions,metrics,errors --format jsonl
+geo runs events <run_id> --limit 200
+```
+
+## Analysis Steps
+
+1. Count runs and provider executions.
+2. Separate success, failure, cancellation, and running states.
+3. Group by prompt, provider, feature, and date.
+4. Extract answer themes from responses.
+5. Compare brand mentions and competitor mentions.
+6. Summarize citation domains and high-authority pages.
+7. Identify repeated provider or backend errors.
+8. State confidence and data gaps.
+
+## Output
+
+Return:
+
+- export boundary
+- top findings
+- evidence table
+- risks and unknowns
+- next actions
+
+When the user wants persistence:
+
+```bash
+cat report.md | geo reports create --title "Batch Run Analysis" --content -
+```
