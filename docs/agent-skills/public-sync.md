@@ -60,8 +60,16 @@ Inputs:
 - `public_branch`: target branch in the public repository.
 - `dry_run`: defaults to true and does not checkout or push the public repo.
 
-For real pushes, configure `PUBLIC_REPO_SYNC_TOKEN` as a GitHub Actions secret.
-The token should have write access only to the public mirror repository.
+For real pushes, configure `PUBLIC_REPO_SYNC_SSH_KEY` as a GitHub Actions
+secret. Use a dedicated deploy key instead of a broad personal token:
+
+1. Generate an SSH key pair for this sync job.
+2. Add the public key to the public mirror repository as a deploy key with
+   write access.
+3. Store the private key in the private source repository secret
+   `PUBLIC_REPO_SYNC_SSH_KEY`.
+
+The key should have write access only to the public mirror repository.
 
 ## Safety Contract
 

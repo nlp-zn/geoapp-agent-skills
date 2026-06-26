@@ -1,8 +1,8 @@
 {
   "syncVersion": 1,
   "source": {
-    "repository": "git@github.com:nlp-zn/geo-app.git",
-    "ref": "813f37ec12e8d54355c5c24767bd8330c7b96e84",
+    "repository": "https://github.com/nlp-zn/geo-app",
+    "ref": "47ea2b310c4c6dac878d34540be3fb1f83c38393",
     "cliVersion": "0.1.0",
     "skillsVersion": "0.1.0"
   },
@@ -56,7 +56,7 @@
     {
       "source": "docs/agent-skills/public-sync.md",
       "target": "docs/agent-skills/public-sync.md",
-      "bytes": 2996
+      "bytes": 3295
     },
     {
       "source": "docs/cli/auth.md",
