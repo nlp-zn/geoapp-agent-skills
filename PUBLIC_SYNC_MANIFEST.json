@@ -1,0 +1,127 @@
+{
+  "syncVersion": 1,
+  "source": {
+    "repository": "git@github.com:nlp-zn/geo-app.git",
+    "ref": "813f37ec12e8d54355c5c24767bd8330c7b96e84",
+    "cliVersion": "0.1.0",
+    "skillsVersion": "0.1.0"
+  },
+  "managedTargets": [
+    "README.md",
+    "skills",
+    "docs/agent-skills",
+    "docs/cli",
+    "examples",
+    "PUBLIC_SYNC_MANIFEST.json"
+  ],
+  "skippedOptionalSources": [
+    "examples/agent-skills"
+  ],
+  "files": [
+    {
+      "source": "docs/agent-skills/cursor-template.md",
+      "target": "docs/agent-skills/cursor-template.md",
+      "bytes": 1216
+    },
+    {
+      "source": "docs/agent-skills/install-claude.md",
+      "target": "docs/agent-skills/install-claude.md",
+      "bytes": 594
+    },
+    {
+      "source": "docs/agent-skills/install-codex.md",
+      "target": "docs/agent-skills/install-codex.md",
+      "bytes": 673
+    },
+    {
+      "source": "docs/agent-skills/playbooks/batch-run-analysis.md",
+      "target": "docs/agent-skills/playbooks/batch-run-analysis.md",
+      "bytes": 346
+    },
+    {
+      "source": "docs/agent-skills/playbooks/competitor-citation-analysis.md",
+      "target": "docs/agent-skills/playbooks/competitor-citation-analysis.md",
+      "bytes": 496
+    },
+    {
+      "source": "docs/agent-skills/playbooks/prompt-generation.md",
+      "target": "docs/agent-skills/playbooks/prompt-generation.md",
+      "bytes": 495
+    },
+    {
+      "source": "docs/agent-skills/playbooks/run-export-report.md",
+      "target": "docs/agent-skills/playbooks/run-export-report.md",
+      "bytes": 346
+    },
+    {
+      "source": "docs/agent-skills/public-sync.md",
+      "target": "docs/agent-skills/public-sync.md",
+      "bytes": 2996
+    },
+    {
+      "source": "docs/cli/auth.md",
+      "target": "docs/cli/auth.md",
+      "bytes": 1473
+    },
+    {
+      "source": "docs/cli/command-reference.md",
+      "target": "docs/cli/command-reference.md",
+      "bytes": 1619
+    },
+    {
+      "source": "docs/cli/errors.md",
+      "target": "docs/cli/errors.md",
+      "bytes": 1044
+    },
+    {
+      "source": "docs/cli/raw-api.md",
+      "target": "docs/cli/raw-api.md",
+      "bytes": 730
+    },
+    {
+      "source": "docs/cli/schema-and-manifest.md",
+      "target": "docs/cli/schema-and-manifest.md",
+      "bytes": 558
+    },
+    {
+      "source": "docs/cli/security-and-audit.md",
+      "target": "docs/cli/security-and-audit.md",
+      "bytes": 917
+    },
+    {
+      "source": "packages/agent-skills/README.md",
+      "target": "README.md",
+      "bytes": 494
+    },
+    {
+      "source": "packages/agent-skills/skills/geo-competitor-citation-analysis/SKILL.md",
+      "target": "skills/geo-competitor-citation-analysis/SKILL.md",
+      "bytes": 2433
+    },
+    {
+      "source": "packages/agent-skills/skills/geo-prompt-ops/SKILL.md",
+      "target": "skills/geo-prompt-ops/SKILL.md",
+      "bytes": 2160
+    },
+    {
+      "source": "packages/agent-skills/skills/geo-reporting/SKILL.md",
+      "target": "skills/geo-reporting/SKILL.md",
+      "bytes": 1555
+    },
+    {
+      "source": "packages/agent-skills/skills/geo-run-analysis/SKILL.md",
+      "target": "skills/geo-run-analysis/SKILL.md",
+      "bytes": 1879
+    },
+    {
+      "source": "packages/agent-skills/skills/geo-shared/SKILL.md",
+      "target": "skills/geo-shared/SKILL.md",
+      "bytes": 2298
+    },
+    {
+      "source": "packages/agent-skills/skills/geo-skill-execution/SKILL.md",
+      "target": "skills/geo-skill-execution/SKILL.md",
+      "bytes": 1539
+    }
+  ]
+}
