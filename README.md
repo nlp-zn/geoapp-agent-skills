@@ -58,6 +58,13 @@ geo brand use <brand_id>
 
 3. Install skills for your agent:
 
+For the current beta, point the CLI at the public skills checkout first:
+
+```bash
+git clone https://github.com/nlp-zn/geoapp-agent-skills.git ~/geoapp-agent-skills
+export GEO_AGENT_SKILLS_SOURCE_DIR=~/geoapp-agent-skills/skills
+```
+
 ```bash
 geo agent-skills install --agent codex
 geo agent-skills doctor --agent codex
@@ -177,6 +184,11 @@ operating patterns:
 - `competitor-citation-gap.md`
 - `run-failure-triage.md`
 - `server-skill-execution.md`
+
+## Manual Testing
+
+Use `docs/agent-skills/manual-test-plan.md` to run an operator-style manual
+test pass from CLI installation through agent task completion.
 
 ## Troubleshooting
 

@@ -26,6 +26,24 @@ geo brand list
 geo brand use <brand_id>
 ```
 
+## Current Beta Skills Source
+
+`geoapp-cli@0.1.0` does not yet bundle the agent skill files in the npm tarball.
+For beta testing, point the CLI at the public skills checkout before running
+`geo agent-skills install`:
+
+```bash
+git clone https://github.com/nlp-zn/geoapp-agent-skills.git ~/geoapp-agent-skills
+export GEO_AGENT_SKILLS_SOURCE_DIR=~/geoapp-agent-skills/skills
+```
+
+If the checkout already exists:
+
+```bash
+git -C ~/geoapp-agent-skills pull --ff-only origin main
+export GEO_AGENT_SKILLS_SOURCE_DIR=~/geoapp-agent-skills/skills
+```
+
 ## Install
 
 ```bash

@@ -21,13 +21,18 @@
     },
     {
       "target": "docs/agent-skills/install-claude.md",
-      "bytes": 1599,
-      "sha256": "eaf72c814ad4f6ef5452c98b1568422ec8d8c732ee79429f6d8786965e1d201e"
+      "bytes": 2142,
+      "sha256": "dded39d09f7c986a314d1b75f17271d5bb1e8c2cf7a15277091826c3624e777e"
     },
     {
       "target": "docs/agent-skills/install-codex.md",
-      "bytes": 1730,
-      "sha256": "a70fd8fda3635ecd4602975567e0991e21be174f7a3236c563f00bbac7c1fa22"
+      "bytes": 2273,
+      "sha256": "a4d58c19b8ffa11630bd6b2fa96560e52000c8ded858527ab70b539b41692812"
+    },
+    {
+      "target": "docs/agent-skills/manual-test-plan.md",
+      "bytes": 10601,
+      "sha256": "d8b65a11922e1091c2f5b1ee5af03df76371974687bf2ae400261c3cc08c47e3"
     },
     {
       "target": "docs/agent-skills/playbooks/batch-run-analysis.md",
@@ -106,8 +111,8 @@
     },
     {
       "target": "README.md",
-      "bytes": 6615,
-      "sha256": "bcb4d7c48c892b73441820c99ea5cb26acdc6670286f9c758fed6a67b4c77447"
+      "bytes": 7007,
+      "sha256": "997c7a786aa41c80a095730619836aaa43a7eb16d63aaadfb0fbba12dd761949"
     },
     {
       "target": "skills/geo-competitor-citation-analysis/references/decision-sop.md",
