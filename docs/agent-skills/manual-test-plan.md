@@ -9,7 +9,7 @@ skill, and report data into useful decisions.
 Validate the end-to-end operator experience:
 
 1. A tester installs the published CLI.
-2. The tester points the CLI at a Geo App API and authenticates.
+2. The tester authenticates against the hosted Geo API.
 3. The tester installs open-source agent skills into Codex or Claude Code.
 4. The agent reads the skills and completes real operating tasks.
 5. The tester records whether the result is usable by an operations user.
@@ -53,7 +53,6 @@ directories unless separately configured.
 ## Preconditions
 
 - The tester has Node.js and npm available.
-- The tester has a reachable Geo App API URL.
 - The tester can authenticate with browser/device login, or has a scoped PAT.
 - The tester has access to at least one brand with useful prompt-run data.
 - The tester can run Codex or Claude Code locally after installing skills.
@@ -82,16 +81,17 @@ Pass criteria:
 - `geo --version` prints a version.
 - `which geo` points to the expected npm global executable.
 
-### 2. Configure API URL
+### 2. Verify Hosted API
 
 ```bash
-geo config set api_url <api_url>
-geo config get api_url
+geo config get
 geo doctor
 ```
 
 Pass criteria:
 
+- `geo config get` resolves `https://api.prompt-insights.com` unless the tester
+  intentionally set a local or self-hosted override.
 - `geo doctor` reaches the API.
 - The response does not report an incompatible CLI/server version.
 

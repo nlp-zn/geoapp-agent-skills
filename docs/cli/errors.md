@@ -31,7 +31,7 @@ Errors are structured JSON by default:
 ## Common Recovery
 
 ```text
-missing_api_url      geo config set api_url <url> or pass --api-url
+missing_api_url      pass --api-url or set api_url only for local/self-hosted APIs
 auth_required        geo auth login or geo auth token set <token>
 missing_brand        geo brand use <brand_id> or pass --brand
 permission_denied    check token scopes and brand allowlist

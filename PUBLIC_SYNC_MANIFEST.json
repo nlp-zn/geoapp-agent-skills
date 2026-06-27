@@ -16,8 +16,8 @@
   "files": [
     {
       "target": "docs/agent-skills/cursor-template.md",
-      "bytes": 1780,
-      "sha256": "6e7d1f9f19d3be6475ce990efe37cf005390f9b271d81b06a72cd893860695e2"
+      "bytes": 1914,
+      "sha256": "25cb3535b832fde62b2205cc90729e2f28c1b5b852cf42a9461194e37c8fecd8"
     },
     {
       "target": "docs/agent-skills/install-claude.md",
@@ -31,8 +31,8 @@
     },
     {
       "target": "docs/agent-skills/manual-test-plan.md",
-      "bytes": 10601,
-      "sha256": "d8b65a11922e1091c2f5b1ee5af03df76371974687bf2ae400261c3cc08c47e3"
+      "bytes": 10638,
+      "sha256": "0972ab614371997a8c82533823ed6380679a72dda8caca96c02b6eecd1462185"
     },
     {
       "target": "docs/agent-skills/playbooks/batch-run-analysis.md",
@@ -66,8 +66,8 @@
     },
     {
       "target": "docs/cli/errors.md",
-      "bytes": 1044,
-      "sha256": "899b5f3bb3b55a015a187dcfb875c1e6e69589b6d63b6d660020508e47f791ff"
+      "bytes": 1059,
+      "sha256": "56ff2f7bfdf4a5a0e3e1361e57eb95e7212e0ba0ac12f06e0f9e530192e75290"
     },
     {
       "target": "docs/cli/raw-api.md",
