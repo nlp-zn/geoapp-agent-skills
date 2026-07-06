@@ -7,6 +7,16 @@ server-side Geo skills.
 
 ## Prerequisites
 
+If `geo` is not found, install the published beta CLI first:
+
+```bash
+npm install -g geoapp-cli@beta
+geo --version
+```
+
+The npm package is `geoapp-cli`, not `@geoapp/cli`; the executable is `geo`.
+For hosted Geo App, the CLI defaults to `https://api.prompt-insights.com`.
+
 ```bash
 geo doctor
 geo auth status
@@ -92,7 +102,7 @@ summarize the top findings and save a report in Geo App.
 | Symptom | Fix |
 | --- | --- |
 | Codex does not see the skills | Re-run `geo agent-skills doctor --agent codex` and restart Codex. |
-| `geo` is not found | Install or expose the published Geo CLI on `PATH`. |
+| `geo` is not found | Run `npm install -g geoapp-cli@beta`, then ensure npm's global bin directory is on `PATH`. |
 | Auth required | Run `geo auth login` or set a scoped PAT with `geo auth token set`. |
 | Missing brand | Run `geo brand list`, then `geo brand use <brand_id>`. |
 | Permission denied | Check PAT scopes and brand allowlist. |

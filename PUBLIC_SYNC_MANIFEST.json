@@ -21,13 +21,13 @@
     },
     {
       "target": "docs/agent-skills/install-claude.md",
-      "bytes": 2142,
-      "sha256": "dded39d09f7c986a314d1b75f17271d5bb1e8c2cf7a15277091826c3624e777e"
+      "bytes": 2455,
+      "sha256": "84b0ebf4ee31853fee84322d03ab61ef0da74a6cefd9679b162f949f8b3bc58f"
     },
     {
       "target": "docs/agent-skills/install-codex.md",
-      "bytes": 2273,
-      "sha256": "a4d58c19b8ffa11630bd6b2fa96560e52000c8ded858527ab70b539b41692812"
+      "bytes": 2586,
+      "sha256": "a903fb023af119ec3bdf064562c00bf8a97e5fcd85c6e8241cf9edce5762037c"
     },
     {
       "target": "docs/agent-skills/manual-test-plan.md",
@@ -55,14 +55,19 @@
       "sha256": "4b2776327b7c4aef6e335b070712629df59f2b42460f4a64485272779d2cad4b"
     },
     {
+      "target": "docs/agent-skills/README.md",
+      "bytes": 1261,
+      "sha256": "409ad0a8faeb87afe3d8dad01ceb85229e8b2e9e89a5146a307973d08c71d0a4"
+    },
+    {
       "target": "docs/cli/auth.md",
       "bytes": 1473,
       "sha256": "fcb97a9ff5e98aa4fa182816f3bc962b2ed743b7b212d9cbaca8839baa021d31"
     },
     {
       "target": "docs/cli/command-reference.md",
-      "bytes": 1619,
-      "sha256": "b93b89679debb9a397b680d91904aef93f7b2a82aadb77371f600f9de264cbea"
+      "bytes": 1558,
+      "sha256": "71bf713e4874000047ac2c449bf87679aee3acecd47d39cde3a14b3e58b12de0"
     },
     {
       "target": "docs/cli/errors.md",
@@ -111,8 +116,8 @@
     },
     {
       "target": "README.md",
-      "bytes": 7007,
-      "sha256": "997c7a786aa41c80a095730619836aaa43a7eb16d63aaadfb0fbba12dd761949"
+      "bytes": 7687,
+      "sha256": "ef074ec3b9ca3b867b5338a3e81233a467d096fc9c10cdd88a9f996df3eb2d09"
     },
     {
       "target": "skills/geo-competitor-citation-analysis/references/decision-sop.md",
@@ -146,13 +151,13 @@
     },
     {
       "target": "skills/geo-run-analysis/references/run-analysis-sop.md",
-      "bytes": 2180,
-      "sha256": "4e4e6fef20104a9094545bcb1c131e5e9e81991709d80f9e4006c29f4a9c837e"
+      "bytes": 2785,
+      "sha256": "65da98a6f15c63f6368aa9811036883eeffe1646431a0c04f14e614c58231cc7"
     },
     {
       "target": "skills/geo-run-analysis/SKILL.md",
-      "bytes": 4304,
-      "sha256": "8f5e9ea0c138a417dc0a4fb14682af85718ff5102386f17150169983657b8722"
+      "bytes": 5180,
+      "sha256": "8667f081aa6d08fdb7ff44b1d375f1760a56264f1f353a872942bd7ce13a820a"
     },
     {
       "target": "skills/geo-shared/references/auth-brand-recovery.md",
@@ -161,8 +166,8 @@
     },
     {
       "target": "skills/geo-shared/SKILL.md",
-      "bytes": 5482,
-      "sha256": "5171661b84be2444b78be4695e9208896ef7e93e6b58a88f6d341aee51053fd0"
+      "bytes": 5719,
+      "sha256": "008b3ddf58f85614a85ea209de78f59c7f770986e3760f50b807cf5dc7f45a9d"
     },
     {
       "target": "skills/geo-skill-execution/references/server-skill-inputs.md",

@@ -68,6 +68,20 @@ geo runs export --since 7d --include response,citations,mentions,metrics,errors
 geo runs export --since 30d --include response,citations,mentions,metrics,errors --format jsonl > runs.jsonl
 ```
 
+- In JSON output, full model answers are nested at
+  `runs[].executions[].responseText`.
+- In JSONL output, each line is one run, so read
+  `executions[].responseText`, `executions[].mentions`, and
+  `executions[].citations` from each line.
+- Do not concatenate `raw_events_sample` from `geo runs events`; those are
+  diagnostic samples and may be intentionally short.
+
+Quick full-answer inspection:
+
+```bash
+jq -r '.executions[] | [.provider, .responseText] | @tsv' runs.jsonl
+```
+
 - Do not rely on raw database fields or internal `extra` payloads. Use the
   documented export contract.
 
@@ -108,6 +122,8 @@ next before making a strong decision.
 | --- | --- |
 | `missing_export_boundary` | Add `--since 7d`, `--run-id`, or `--prompt-id`. |
 | Empty export | Widen `--since`, check brand, list prompts, then retry. |
+| `responseText` is null | Confirm `--include response`, inspect `executions[]` rather than a top-level `responses` field, then run `geo runs events <run_id>` only to diagnose persistence/capture failures. |
+| Only `raw_events_sample` has text | Re-run `geo runs export --run-id <run_id> --include response,citations,mentions,metrics,errors`; event samples are not the full answer contract. |
 | `permission_denied` | Token needs `runs:read` or `runs:cancel`. |
 | Watch disconnected | Use `geo runs events <run_id>` to recover event history. |
 | Too much output | Re-run with tighter `--since`, `--prompt-id`, or JSONL output. |

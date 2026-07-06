@@ -26,8 +26,10 @@ backend or CLI source code.
 
 ## Requirements
 
-- A published `geo` CLI installation.
-- A Geo App API URL.
+- A published `geo` CLI installation: `npm install -g geoapp-cli@beta`.
+- The executable name is `geo`; the npm package name is `geoapp-cli`, not
+  `@geoapp/cli`.
+- The hosted Geo App API defaults to `https://api.prompt-insights.com`.
 - Authentication through browser/device login or a scoped PAT/API key.
 - A selected brand context.
 
@@ -42,21 +44,29 @@ geo schema commands
 
 ## Quick Start For Human Users
 
-1. Authenticate:
+1. Install and verify the CLI:
+
+```bash
+npm install -g geoapp-cli@beta
+geo --version
+geo doctor
+```
+
+2. Authenticate:
 
 ```bash
 geo auth login
 geo auth whoami
 ```
 
-2. Select a brand:
+3. Select a brand:
 
 ```bash
 geo brand list
 geo brand use <brand_id>
 ```
 
-3. Install skills for your agent:
+4. Install skills for your agent:
 
 For the current beta, point the CLI at the public skills checkout first:
 
@@ -77,7 +87,7 @@ geo agent-skills install --agent claude
 geo agent-skills doctor --agent claude
 ```
 
-4. Ask your agent to run a real workflow:
+5. Ask your agent to run a real workflow:
 
 ```text
 Use the Geo skills to export the last 7 days of prompt runs, explain the main
@@ -148,8 +158,13 @@ Use `geo-run-analysis`, then `geo-reporting`.
 
 ```bash
 geo runs export --since 7d --include response,citations,mentions,metrics,errors --format jsonl > runs.jsonl
+jq -r '.executions[] | [.provider, .responseText] | @tsv' runs.jsonl
 cat report.md | geo reports create --title "Weekly GEO Analysis" --content -
 ```
+
+Full answer text is `runs[].executions[].responseText` in JSON output, or
+`executions[].responseText` for each JSONL run line. `geo runs events` may show
+`raw_events_sample`; that is diagnostic sampling, not the complete answer.
 
 ### Investigate Competitors And Citations
 
@@ -194,6 +209,7 @@ test pass from CLI installation through agent task completion.
 
 | Symptom | Recovery |
 | --- | --- |
+| `geo` command not found | `npm install -g geoapp-cli@beta`, then check npm global bin is on `PATH`. |
 | Missing API URL | `geo config set api_url <url>` |
 | Auth required | `geo auth login` or `geo auth token set <token>` |
 | Missing brand | `geo brand list`, then `geo brand use <brand_id>` |

@@ -18,6 +18,23 @@ Recommended export:
 geo runs export --since 7d --include response,citations,mentions,metrics,errors --format jsonl > runs.jsonl
 ```
 
+The complete model answer text is in the export contract, not in run event
+samples:
+
+- JSON output: `runs[].executions[].responseText`
+- JSONL output: one run per line, then `executions[].responseText`
+- Mentions: `executions[].mentions`
+- Citations: `executions[].citations`
+
+```bash
+jq -r '.executions[] | [.provider, .responseText] | @tsv' runs.jsonl
+```
+
+If `responseText` is null for a provider, state that the answer was not
+persisted for that execution and inspect `geo runs events <run_id> --limit 200`
+for capture or persistence errors. Do not substitute `raw_events_sample` as the
+full answer.
+
 ## Triage Before Analysis
 
 Before drawing conclusions:

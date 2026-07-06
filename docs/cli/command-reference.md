@@ -5,22 +5,26 @@ JSON. Watch and export flows use NDJSON or raw stdout where useful.
 
 ## Command Groups
 
+This table is checked against `COMMAND_GROUPS` in
+`packages/cli/src/schema/manifest.ts` by `pnpm release:cli:docs`.
+
 | Group | Purpose |
 | --- | --- |
-| `auth` | Token set/create/list/revoke, browser login, device login, status, whoami |
-| `config` | Profiles and API URL defaults |
-| `doctor` | Local config, backend health, and compatibility checks |
-| `api` | Raw GET/POST/PATCH/DELETE fallback for long-tail endpoints |
-| `schema` | Local command manifest and backend OpenAPI lookup/cache |
-| `agent-skills` | Install and diagnose external agent playbooks |
-| `brand` | List, select, and inspect brand context |
-| `prompts` | List/get/create/batch/delete/generate/run/batch-run |
-| `runs` | List/get/events/watch/cancel/export |
-| `skills` | List/detail/config/execute/watch/cancel backend skills |
-| `reports` | List/get/create/delete reports |
-| `competitors` | List/import/export/merge/confirm/restore competitors |
-| `citations` | Domains/pages/compare/emerging/top-authority/classify |
-| `analytics` | Overview/visibility/competitor-analysis/refresh/generate-insights |
+| `auth` | Manage CLI authentication |
+| `config` | Manage profiles and API URLs |
+| `doctor` | Diagnose CLI, auth, brand, and schema setup |
+| `api` | Call Geo App APIs directly |
+| `schema` | Inspect command and API schemas |
+| `agent-skills` | Install and diagnose agent skills |
+| `brand` | Select and inspect brand context |
+| `prompts` | Manage, generate, and run prompts |
+| `runs` | Inspect, watch, cancel, and export prompt runs |
+| `skills` | Execute server-side Geo App skills |
+| `reports` | Save and retrieve reports |
+| `competitors` | Inspect and manage competitors |
+| `citations` | Inspect citation domains and pages |
+| `analytics` | Retrieve overview and visibility analytics |
+| `completion` | Generate shell completion scripts |
 
 ## Discovery
 
