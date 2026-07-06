@@ -18,7 +18,7 @@ This is a human judgment pass, not an automated benchmark suite.
 
 ## Current Beta Constraint
 
-`geoapp-cli@0.1.0` does not yet bundle the agent skill files in the npm tarball.
+`geoapp-cli@beta` does not yet bundle the agent skill files in the npm tarball.
 For this beta test, install the CLI from npm, but use the public skills
 repository as the skills source:
 

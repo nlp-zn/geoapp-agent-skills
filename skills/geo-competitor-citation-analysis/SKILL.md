@@ -3,7 +3,7 @@ name: geo-competitor-citation-analysis
 version: 0.2.0
 description: Investigate Geo competitor, citation, and analytics signals to explain brand visibility and recommend actions. Use this skill whenever the user asks why a brand is underperforming, which competitors matter, what citations influence AI answers, which domains are emerging, how to improve authority, or how analytics should drive decisions.
 min_cli_version: 0.1.0
-tested_cli_version: 0.1.0
+tested_cli_version: 0.1.1
 required_scopes:
   - competitors:read
   - competitors:write

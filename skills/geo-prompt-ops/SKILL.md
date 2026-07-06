@@ -3,7 +3,7 @@ name: geo-prompt-ops
 version: 0.2.0
 description: Generate, create, import, run, and batch-run Geo App prompts through the `geo` CLI. Use this skill whenever the user asks to create prompts, customize prompt sets, batch run prompts, test prompt coverage, operate prompt generation from keywords, or turn GUI prompt workflows into agent-run CLI workflows.
 min_cli_version: 0.1.0
-tested_cli_version: 0.1.0
+tested_cli_version: 0.1.1
 required_scopes:
   - prompts:read
   - prompts:write

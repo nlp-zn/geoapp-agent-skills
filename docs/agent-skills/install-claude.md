@@ -38,7 +38,7 @@ geo brand use <brand_id>
 
 ## Current Beta Skills Source
 
-`geoapp-cli@0.1.0` does not yet bundle the agent skill files in the npm tarball.
+`geoapp-cli@beta` does not yet bundle the agent skill files in the npm tarball.
 For beta testing, point the CLI at the public skills checkout before running
 `geo agent-skills install`:
 

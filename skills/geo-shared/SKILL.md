@@ -3,7 +3,7 @@ name: geo-shared
 version: 0.2.0
 description: Shared Geo CLI operating rules for every Geo App agent workflow. Use this skill whenever a user asks an agent to operate Geo App, run prompts, analyze runs, create reports, inspect competitors or citations, execute Geo server skills, recover auth/brand errors, or use `geo api`, even if they do not explicitly mention setup.
 min_cli_version: 0.1.0
-tested_cli_version: 0.1.0
+tested_cli_version: 0.1.1
 required_scopes:
   - auth:read
   - brand:read

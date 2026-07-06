@@ -3,7 +3,7 @@ name: geo-run-analysis
 version: 0.2.0
 description: Export Geo prompt runs, inspect run events, diagnose failures, and turn model responses, mentions, citations, metrics, and errors into evidence-backed decisions. Use this skill whenever the user asks what happened in a run, why GEO visibility changed, whether prompt results are trustworthy, or how to analyze batch prompt output.
 min_cli_version: 0.1.0
-tested_cli_version: 0.1.0
+tested_cli_version: 0.1.1
 required_scopes:
   - runs:read
   - runs:cancel

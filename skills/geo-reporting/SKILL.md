@@ -3,7 +3,7 @@ name: geo-reporting
 version: 0.2.0
 description: Turn Geo CLI analysis into durable Markdown reports saved back to Geo App. Use this skill whenever the user wants a weekly report, executive summary, data-backed recommendation, decision memo, operational review, or any final analysis artifact created from prompts, runs, analytics, competitors, citations, or server-skill results.
 min_cli_version: 0.1.0
-tested_cli_version: 0.1.0
+tested_cli_version: 0.1.1
 required_scopes:
   - reports:read
   - reports:write

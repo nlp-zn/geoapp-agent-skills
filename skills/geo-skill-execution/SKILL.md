@@ -3,7 +3,7 @@ name: geo-skill-execution
 version: 0.2.0
 description: Execute and monitor backend/server-side Geo App skills through `geo skills` commands. Use this skill when the user asks to run a platform skill, inspect available server skills, configure or disable a server skill, watch a skill execution, cancel an execution, or distinguish backend skills from open-source agent skills.
 min_cli_version: 0.1.0
-tested_cli_version: 0.1.0
+tested_cli_version: 0.1.1
 required_scopes:
   - skills:read
   - skills:execute

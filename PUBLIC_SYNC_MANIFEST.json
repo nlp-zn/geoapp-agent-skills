@@ -1,8 +1,8 @@
 {
   "syncVersion": 1,
   "package": {
-    "cliVersion": "0.1.0",
-    "skillsVersion": "0.1.0"
+    "cliVersion": "0.1.1",
+    "skillsVersion": "0.1.1"
   },
   "managedTargets": [
     "README.md",
@@ -21,18 +21,18 @@
     },
     {
       "target": "docs/agent-skills/install-claude.md",
-      "bytes": 2455,
-      "sha256": "84b0ebf4ee31853fee84322d03ab61ef0da74a6cefd9679b162f949f8b3bc58f"
+      "bytes": 2454,
+      "sha256": "c42e1df0bf6870d31dbc58ebb6178bb2d74ae20d06b5a232f796c721ddf7c37f"
     },
     {
       "target": "docs/agent-skills/install-codex.md",
-      "bytes": 2586,
-      "sha256": "a903fb023af119ec3bdf064562c00bf8a97e5fcd85c6e8241cf9edce5762037c"
+      "bytes": 2585,
+      "sha256": "1a5b782637f9c9b1cf3ed70d589ff17594acd42bbb84294d4068783a25191f1e"
     },
     {
       "target": "docs/agent-skills/manual-test-plan.md",
-      "bytes": 10638,
-      "sha256": "0972ab614371997a8c82533823ed6380679a72dda8caca96c02b6eecd1462185"
+      "bytes": 10637,
+      "sha256": "036d50fec22e44b42317cf8dbbee764bb1bbde7232d11f69dddcf16d2511bec3"
     },
     {
       "target": "docs/agent-skills/playbooks/batch-run-analysis.md",
@@ -127,7 +127,7 @@
     {
       "target": "skills/geo-competitor-citation-analysis/SKILL.md",
       "bytes": 4617,
-      "sha256": "77763438f4a9dd6345541bba9a72e76bbf696709e29226a568fa6d36a3c5cfa3"
+      "sha256": "c9cc0b9865ffb0c623f48180439ffec02fbfea02b8e25d666472ccb0c2a7a3e9"
     },
     {
       "target": "skills/geo-prompt-ops/references/prompt-inputs.md",
@@ -137,7 +137,7 @@
     {
       "target": "skills/geo-prompt-ops/SKILL.md",
       "bytes": 5182,
-      "sha256": "ad381b793e4fb1a58a755e093b8d492c1b3c093237024f45ab475936520f6b8b"
+      "sha256": "c48cb32ad5868ed734f128c015e0358bcbf68a4fa1d57de0949dc374d41a59b1"
     },
     {
       "target": "skills/geo-reporting/references/report-contract.md",
@@ -147,7 +147,7 @@
     {
       "target": "skills/geo-reporting/SKILL.md",
       "bytes": 3766,
-      "sha256": "0263936b05fe157e01a7e08d725ac75bc32582d8f412f104033de064ed3ebdac"
+      "sha256": "94a88eec631f77ee464980a3eda35e5fb9ad6e228612d22a8110e7956d12b305"
     },
     {
       "target": "skills/geo-run-analysis/references/run-analysis-sop.md",
@@ -157,7 +157,7 @@
     {
       "target": "skills/geo-run-analysis/SKILL.md",
       "bytes": 5180,
-      "sha256": "8667f081aa6d08fdb7ff44b1d375f1760a56264f1f353a872942bd7ce13a820a"
+      "sha256": "ce22f34a0eb896041d21047cfa8e3a30e164234fbbf1bf3284b103b7765ea2cc"
     },
     {
       "target": "skills/geo-shared/references/auth-brand-recovery.md",
@@ -167,7 +167,7 @@
     {
       "target": "skills/geo-shared/SKILL.md",
       "bytes": 5719,
-      "sha256": "008b3ddf58f85614a85ea209de78f59c7f770986e3760f50b807cf5dc7f45a9d"
+      "sha256": "7974adf6fb0bd440d10d9419048a44a26ab229a8cd3238fbecacc021dff81206"
     },
     {
       "target": "skills/geo-skill-execution/references/server-skill-inputs.md",
@@ -177,7 +177,7 @@
     {
       "target": "skills/geo-skill-execution/SKILL.md",
       "bytes": 3669,
-      "sha256": "4e03df4a76445513642889646bd86b9fb0650f3ef6f2b7ce2d411c1a539d571c"
+      "sha256": "cefa097f925852c368cb78c486b17760a7bc74aa6d1d08a7c26dd77908f34c82"
     }
   ]
 }
